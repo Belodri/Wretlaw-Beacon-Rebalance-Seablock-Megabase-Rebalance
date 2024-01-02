@@ -3,7 +3,7 @@
 --beacon mk2
 local beacon2 = util.table.deepcopy(beacon_fake)
 beacon2.name = "beacon2"
-beacon2.module_specification.module_slots = 15
+beacon2.module_specification.module_slots = 30 --edited; main = 15
 beacon2.supply_area_distance = 14.2
 beacon2.module_specification.module_info_max_icons_per_row = 5
 beacon2.module_specification.module_info_max_icon_rows = 3
@@ -77,7 +77,7 @@ beacon2.water_reflection = {
 --beacon mk3 
 local beacon3 = util.table.deepcopy(beacon_fake)
 beacon3.name = "beacon3"
-beacon3.module_specification.module_slots = 20
+beacon3.module_specification.module_slots = 30 --edited; main = 20
 beacon3.supply_area_distance = 14.2
 beacon3.module_specification.module_info_max_icons_per_row = 5
 beacon3.module_specification.module_info_max_icon_rows = 4
@@ -150,8 +150,8 @@ beacon3.water_reflection = {
 
 --beacon mk1 (put last so it doesnt interfere with the others)
 local beacon = data.raw["beacon"]["beacon"]
-beacon.module_specification.module_slots = 8
-beacon.module_specification.module_info_max_icons_per_row = 4
+beacon.module_specification.module_slots = 10 --edited; main = 8
+beacon.module_specification.module_info_max_icons_per_row = 5
 beacon.energy_usage = "350KW"
 --beacon.collision_box = {{-1.3, -1.3}, {1.3, 1.3}}
 beacon.supply_area_distance = 4.5 - beacon.collision_box[2][1]
